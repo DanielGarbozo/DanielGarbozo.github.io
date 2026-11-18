@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel Garbozo · CV</title>
+  <meta name="description" content="One-page CV of Daniel Garbozo, bioinformatician.">
+  <link rel="canonical" href="https://danielgarbozo.github.io/cv.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/cv.css">
+</head>
+<body>
+  <nav class="cv-toolbar" aria-label="CV actions">
+    <a href="index.html">← Back to site</a>
+    <a href="cv.pdf" download>Download PDF</a>
+  </nav>
+
+  <main class="sheet">
+    <header class="cv-head">
+      <h1>Daniel Garbozo</h1>
+      <p class="cv-headline">Bioinformatician <b>|</b> 3D Genome &amp; Chromatin <b>|</b> Multi-Omics &amp; NGS <b>|</b> Reproducible Pipelines (Nextflow, Python, R) <b>|</b> Protein Structure &amp; ML for Genomics</p>
+      <p class="cv-contact">
+        <a href="mailto:danielgarbozo4@gmail.com">danielgarbozo4@gmail.com</a> ·
+        <a href="https://github.com/DanielGarbozo">github.com/DanielGarbozo</a> ·
+        <a href="https://www.linkedin.com/in/danielgarbozo">linkedin.com/in/danielgarbozo</a> ·
+        <a href="https://danielgarbozo.github.io">danielgarbozo.github.io</a>
+      </p>
+    </header>
+
+    <section>
+      <h2>Profile</h2>
+      <p class="cv-profile">Bioinformatician building production-grade, reproducible software for large-scale omics: DSL2 Nextflow pipelines with Docker/Singularity profiles and R and Python packages, across the NGS-to-multi-omics workflow. 3+ years of research with the University of Pennsylvania, NYU, The Rockefeller University, Johns Hopkins and BigMind; interested in integrative foundation models for genomics and clinical data.</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="row">
+        <p><b>B.Sc. Genetics &amp; Biotechnology</b>, Universidad Nacional Mayor de San Marcos (UNMSM), Lima, Peru</p>
+        <span class="when">2020 - 2024</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Research experience</h2>
+      <div class="entry">
+        <div class="row"><p><b>Research Intern</b>, Ercan Lab, Center for Genomics and Systems Biology, New York University</p><span class="when">04.2025 - present</span></div>
+        <p class="bullet">Built HPC-compatible ChIP-seq (DiffBind across cohesin, condensin and RNA Pol II perturbations) and Hi-C / 3D-genomics workflows (chromatin fountains, loop extrusion, X-vs-autosome profiles), packaged as hicpup and hicpup-nf.</p>
+      </div>
+      <div class="entry">
+        <div class="row"><p><b>Research Assistant</b>, BigMind (Multi-Omics &amp; Immunology), NYU / New York Genome Center</p><span class="when">11.2024 - present</span></div>
+        <p class="bullet">Core developer of OmicsKit; lead the tuberculosis platelet transcriptomics study with City St George's, University of London (Salmon, DESeq2, CAMERA, PADOG, GSEA).</p>
+      </div>
+      <div class="entry">
+        <div class="row"><p><b>Research Intern</b>, Risca Lab, The Rockefeller University</p><span class="when">11.2025 - 12.2025</span></div>
+        <p class="bullet">DiffBind ATAC-seq differential accessibility (macroH2A knockdown vs. wild-type RPE cells, ±TGF-β1), TF motif analysis (JASPAR/HOCOMOCO), ChIPseeker and deepTools profiling.</p>
+      </div>
+      <div class="entry">
+        <div class="row"><p><b>Research Intern</b>, Dept. of International Health, Johns Hopkins Bloomberg School of Public Health</p><span class="when">03.2024 - 11.2024</span></div>
+        <p class="bullet">Led the RNA-seq analysis of a Chagas cardiomyopathy blood-transcriptome study, from QC and quantification to pathway enrichment, manuscript figures and Methods/Results writing.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Software</h2>
+      <ul class="sw">
+        <li><b><a href="https://github.com/DanielGarbozo/hicpup">hicpup</a></b> <span class="meta">Python · author</span>: Hi-C pileup analysis (fountain cone profiles, P(s), loops); Typer CLI, regression tests, CI.</li>
+        <li><b><a href="https://github.com/DanielGarbozo/hicpup-nf">hicpup-nf</a></b> <span class="meta">Nextflow DSL2 · author</span>: containerized, nf-core-style pipeline from Juicer .hic to cone profiles.</li>
+        <li><b><a href="https://github.com/BigMindLab/OmicsKit">OmicsKit</a></b> <span class="meta">R · core developer</span>: reproducible multi-omics analysis and visualization.</li>
+        <li><b><a href="https://github.com/DanielGarbozo/peroPOA_snRNAseq">peroPOA_snRNAseq</a></b> <span class="meta">Python, R · author</span>: reproducible snRNA-seq reanalysis of a public <i>Peromyscus</i> atlas.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Manuscripts</h2>
+      <ul class="pubs">
+        <li><b class="me">Garbozo D</b>, Guevara-Diaz DF, Tataje-Lavanda L, Requena D. OmicsKit: A toolset for multi-omics analysis and visualization. <i>Bioinformatics Advances</i>, 2026. <span class="st">Submitted, under review</span></li>
+        <li>Requena D, Guevara-Diaz DF, <b class="me">Garbozo D</b>, Duque C, Medico JA, et al. Blood transcriptomic biomarkers of cardiomyopathy in chronic Chagas disease. <i>Journal of Infectious Diseases</i>, 2026. <span class="st">Submitted</span></li>
+        <li><b class="me">Garbozo D</b>, Guevara-Diaz DF, Requena D. Platelet transcriptomic profiling provides novel insights into Tuberculosis disease. 2026. <span class="st">In preparation, internal review</span></li>
+        <li>Wang H, Zhao Y, <b class="me">Garbozo D</b>, et al. Insights of Cohesin and Condensin in Dosage Compensation in <i>C. elegans</i>. 2026. <span class="st">In preparation</span></li>
+        <li><b class="me">Garbozo D</b>, Tataje-Lavanda L, et al. Molecular dynamics of the pre-fusion F glycoprotein in Peruvian field isolates of Newcastle disease virus compared with the S1133 reference strain. 2026. <span class="st">In preparation</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Selected awards</h2>
+      <ul class="awards">
+        <li>SACNAS Pathway to Graduate School Program <span class="when">2026</span></li>
+        <li>Securing Degrees Scholarship <span class="when">2026</span></li>
+        <li>Científico Latino GSMI scholar <span class="when">2026</span></li>
+        <li>Fellowship, Galaxy &amp; Bioconductor Community Conference (CSHL) <span class="when">2025</span></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,18 @@
+# Environment for the figure scripts in this folder.
+#   conda env create -f figures/environment.yml && conda activate site-figures
+name: site-figures
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - cooler=0.10.4
+  - cooltools=0.7.1
+  - pandas<3          # cooltools 0.7.1 relies on a pandas<3 indexing pattern
+  - numpy
+  - scipy
+  - matplotlib
+  - pillow            # with WebP support (conda-forge builds include libwebp)
+  - pip
+  - pip:
+      - hic2cool==0.8.3

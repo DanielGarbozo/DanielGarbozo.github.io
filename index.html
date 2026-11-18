@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel Garbozo · Bioinformatician</title>
+  <meta name="description" content="Daniel Garbozo, bioinformatician working on 3D genome and chromatin, multi-omics and NGS, and reproducible pipelines in Nextflow, Python and R.">
+  <link rel="canonical" href="https://danielgarbozo.github.io/">
+  <meta name="theme-color" content="#0c0f14">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Daniel Garbozo · Bioinformatician">
+  <meta property="og:description" content="3D genome and chromatin, multi-omics and NGS, reproducible pipelines (Nextflow, Python, R).">
+  <meta property="og:url" content="https://danielgarbozo.github.io/">
+  <meta property="og:image" content="https://danielgarbozo.github.io/assets/img/hero-hic.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="preload" as="image" href="assets/img/hero-hic.webp" type="image/webp" fetchpriority="high">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Inline icon sprite (drawn for this site) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7 3 12l5 5M16 7l5 5-5 5M13.5 4l-3 16"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 10.5V17M8 7.5v.01M12 17v-4a2.5 2.5 0 0 1 5 0v4M12 10.5V17"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6 8.5-6"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 2.8h8.5L19 7.3V21.2H6z"/><path d="M14 3v5h5M9 12h7M9 15.5h7M9 19h4"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v15M6 13l6 6 6-6"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 20V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8.5" y="8.5" width="12" height="12" rx="2"/><path d="M15.5 8.5V5a1.5 1.5 0 0 0-1.5-1.5H5A1.5 1.5 0 0 0 3.5 5v9A1.5 1.5 0 0 0 5 15.5h3.5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.5"/><path d="m8.5 13.5-1.5 7.5 5-2.5 5 2.5-1.5-7.5"/></symbol>
+    <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6"/><path d="M15.5 4.9a3.2 3.2 0 0 1 0 6.2M17.5 14.3c2.1.7 3.5 2.8 3.5 5.7"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#home">Daniel Garbozo<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+        <span class="bars" aria-hidden="true"></span> Menu
+      </button>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===================== Home ===================== -->
+    <section class="hero" id="home" aria-labelledby="hero-name">
+      <picture class="hero-map">
+        <source srcset="assets/img/hero-hic.webp" type="image/webp">
+        <img src="assets/img/hero-hic.jpg" width="3200" height="632" alt="" fetchpriority="high" decoding="async">
+      </picture>
+
+      <div class="hero-inner container">
+        <picture>
+          <source srcset="assets/img/profile.webp" type="image/webp">
+          <img class="avatar" src="assets/img/profile.jpg" width="400" height="400" decoding="async" alt="Portrait of Daniel Garbozo">
+        </picture>
+        <p class="hero-intro">Hello, I'm</p>
+        <h1 class="hero-name" id="hero-name">Daniel Garbozo</h1>
+        <ul class="roles" aria-label="Roles">
+          <li>Bioinformatician</li>
+          <li>3D Genome &amp; Chromatin</li>
+          <li>Multi-Omics &amp; NGS</li>
+          <li>Reproducible Pipelines</li>
+          <li>Protein Structure &amp; ML for Genomics</li>
+        </ul>
+        <ul class="social" aria-label="Profiles and contact">
+          <li><a href="https://github.com/DanielGarbozo" rel="me"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/danielgarbozo" rel="me"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg>LinkedIn</a></li>
+          <li><a href="mailto:danielgarbozo4@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Email</a></li>
+          <li><a href="cv.pdf"><svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg>CV (PDF)</a></li>
+        </ul>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About"><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></a>
+      <p class="hero-credit">Background: Hi-C contacts along the <i>C. elegans</i> X chromosome, public data GEO GSE188849 (Ercan lab), rendered with cooler and cooltools.</p>
+    </section>
+
+    <!-- ===================== About ===================== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">About</span>
+          <h2 class="tagline" id="about-title">Reproducible software for reading the genome, in one dimension and in three.</h2>
+        </div>
+
+        <div class="about-grid">
+          <figure class="about-photo reveal">
+            <picture>
+              <source srcset="assets/img/profile.webp" type="image/webp">
+              <img src="assets/img/profile.jpg" width="400" height="400" alt="Daniel Garbozo, smiling, in a gray blazer outdoors in the evening" loading="lazy" decoding="async">
+            </picture>
+          </figure>
+
+          <div class="about-body reveal">
+            <p class="lead" style="margin-top:0">I'm a Peruvian bioinformatician building production-grade, reproducible software for large-scale omics: DSL2 Nextflow pipelines with Docker and Singularity profiles, and R and Python packages.</p>
+            <p>My work covers the path from raw sequencing reads to multi-omics integration (RNA-seq, ChIP-seq, ATAC-seq, Hi-C and single-nucleus RNA-seq), with an eye on the biology behind the data and growing experience integrating AI tools. Over three-plus years I have done bioinformatics research with the University of Pennsylvania, New York University, The Rockefeller University, Johns Hopkins Bloomberg School of Public Health and BigMind, and I have led the bioinformatics component of studies across laboratories and institutions. I care about collaborative teams, including mentoring peers.</p>
+            <p>Next, I want to expand into machine learning and deep learning that integrate genomics with clinical data and images as additional layers.</p>
+
+            <h3>Profile</h3>
+            <dl class="kv">
+              <div><dt>Name</dt><dd>Daniel Garbozo</dd></div>
+              <div><dt>Nationality</dt><dd>Peruvian</dd></div>
+              <div><dt>Education</dt><dd>B.Sc. Genetics &amp; Biotechnology, Universidad Nacional Mayor de San Marcos, Lima (2020-2024)</dd></div>
+              <div><dt>Now</dt><dd>Research Intern, Ercan Lab (NYU) · Research Assistant, BigMind · Proteomic Bioinformatician, FARVET</dd></div>
+              <div><dt>Interest</dt><dd>Integrative foundation models for genomics and clinical data</dd></div>
+              <div><dt>Languages</dt><dd>Spanish (native), English (C1)</dd></div>
+              <div><dt>Email</dt><dd><a href="mailto:danielgarbozo4@gmail.com">danielgarbozo4@gmail.com</a></dd></div>
+            </dl>
+
+            <h3>Skills</h3>
+            <div class="skills">
+              <div>
+                <h4>Omics &amp; NGS</h4>
+                <ul class="tags">
+                  <li>RNA-seq</li><li>ChIP-seq</li><li>ATAC-seq</li><li>Hi-C / 3D genomics</li><li>sc/snRNA-seq</li><li>Multi-omics integration</li><li>Oxford Nanopore</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Analysis tools</h4>
+                <ul class="tags">
+                  <li>DESeq2</li><li>edgeR</li><li>limma</li><li>Salmon</li><li>GSEA · CAMERA · PADOG</li><li>MACS2</li><li>DiffBind</li><li>deepTools</li><li>ChIPseeker</li><li>cooler · cooltools · coolpuppy</li><li>scanpy</li><li>Seurat</li><li>Harmony</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Programming &amp; workflows</h4>
+                <ul class="tags">
+                  <li>R (packages, Bioconductor)</li><li>Python (packaging, Typer, pytest)</li><li>Bash</li><li>Nextflow DSL2</li><li>Snakemake</li><li>Git &amp; GitHub Actions</li><li>MkDocs / Read the Docs</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Compute</h4>
+                <ul class="tags">
+                  <li>HPC (SLURM)</li><li>Docker</li><li>Singularity</li><li>Microsoft Azure (exploring)</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Machine learning &amp; structure</h4>
+                <ul class="tags">
+                  <li>Transformers on Hi-C maps</li><li>Simulation-based learning</li><li>Synthetic benchmarks</li><li>AlphaFold2-Multimer</li><li>Phylogenetics (MACSE, IQ-TREE)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="btn-row">
+              <a class="btn btn--outline" href="#contact"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Get in touch</a>
+              <a class="btn btn--solid" href="cv.pdf" download><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg>Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Counters ===================== -->
+    <section class="stats" aria-label="At a glance">
+      <div class="container">
+        <ul class="stats-list">
+          <li class="reveal"><span class="stat-num" data-count="5">5</span><span class="stat-label">Manuscripts</span><span class="stat-note">submitted or in preparation</span></li>
+          <li class="reveal"><span class="stat-num" data-count="5">5</span><span class="stat-label">Open-source tools</span><span class="stat-note">authored or co-developed</span></li>
+          <li class="reveal"><span class="stat-num" data-count="9">9</span><span class="stat-label">Conference talks</span><span class="stat-note">oral presentations</span></li>
+          <li class="reveal"><span class="stat-num" data-count="5">5</span><span class="stat-label">Institutions</span><span class="stat-note">in multi-site collaborations</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== Research ===================== -->
+    <section class="section section--alt" id="research" aria-labelledby="research-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Research</span>
+          <h2 class="tagline" id="research-title">The questions I work on.</h2>
+          <p class="lead">One card per question. Projects with unpublished manuscripts are described by question and method only.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card reveal">
+            <figure class="card-media">
+              <picture>
+                <source srcset="assets/img/research-celegans.webp" type="image/webp">
+                <img src="assets/img/research-celegans.jpg" width="800" height="500" loading="lazy" decoding="async" alt="Several slender C. elegans worms crawling on a culture plate under a stereo microscope">
+              </picture>
+              <figcaption>Photo: ZEISS Microscopy, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></figcaption>
+            </figure>
+            <div class="card-body">
+              <p class="card-meta">Ercan Lab · NYU Center for Genomics and Systems Biology · 2025-now</p>
+              <h3>How do cohesin and condensin fold chromosomes during dosage compensation?</h3>
+              <span class="status">Manuscript in preparation</span>
+              <p>In <i>C. elegans</i>, I build HPC workflows on Hi-C and ChIP-seq data to study chromatin fountains, loop extrusion, X-versus-autosome interaction profiles, 60° cone profiles and site-centered strength at rex regions, with differential binding across cohesin, condensin and RNA Pol II perturbations and RNA-seq after SMC-3/WAPL depletion.</p>
+              <ul class="tags"><li>Hi-C</li><li>ChIP-seq</li><li>cooltools</li><li>coolpuppy</li><li>DiffBind</li><li>DESeq2</li></ul>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <figure class="card-media">
+              <picture>
+                <source srcset="assets/img/research-fountain.webp" type="image/webp">
+                <img src="assets/img/research-fountain.jpg" width="800" height="500" loading="lazy" decoding="async" alt="Illustration: a triangular contact map with three bright vertical jets rising from the diagonal, the shape of chromatin fountains">
+              </picture>
+              <figcaption>Illustration: toy simulation, not model output</figcaption>
+            </figure>
+            <div class="card-body">
+              <p class="card-meta">dryhic · own project</p>
+              <h3>Can a model trained on simulations read fountains from a single Hi-C map?</h3>
+              <span class="status status--neutral">In development</span>
+              <p>Fountain strength is continuous, and each published caller cuts it at a different point. I am building a transformer that scores fountain anchors as calibrated per-bin probabilities from one contact map, pretrained on parametric fountain simulators instead of published calls, then benchmarked on published anchors in a CTCF-free genome without fine-tuning.</p>
+              <ul class="tags"><li>Transformers</li><li>Simulation-based learning</li><li>cooler</li><li>Python</li></ul>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <figure class="card-media">
+              <picture>
+                <source srcset="assets/img/research-atac.webp" type="image/webp">
+                <img src="assets/img/research-atac.jpg" width="800" height="500" loading="lazy" decoding="async" alt="Schematic: a string of nucleosomes with a gap of open DNA; insertion marks cluster in the gap and produce a coverage peak above it">
+              </picture>
+              <figcaption>Schematic of ATAC-seq made for this site</figcaption>
+            </figure>
+            <div class="card-body">
+              <p class="card-meta">Risca Lab · The Rockefeller University · 2025</p>
+              <h3>How does chromatin accessibility change when a histone variant is lost under stress?</h3>
+              <p>I ran DiffBind differential-accessibility analysis of ATAC-seq data from macroH2A knockdown versus wild-type RPE cells, with and without TGF-β1 stress, followed by TF motif analysis (JASPAR, HOCOMOCO), ChIPseeker annotation and deepTools signal and metagene profiles.</p>
+              <p>Related and ongoing: genomic analysis of DNA double-strand break sites in yeast, with the Bernstein Lab at the University of Pennsylvania.</p>
+              <ul class="tags"><li>ATAC-seq</li><li>DiffBind</li><li>Motif analysis</li><li>deepTools</li></ul>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <figure class="card-media">
+              <picture>
+                <source srcset="assets/img/research-tcruzi.webp" type="image/webp">
+                <img src="assets/img/research-tcruzi.jpg" width="800" height="500" loading="lazy" decoding="async" alt="Illustration of a Trypanosoma cruzi parasite: a curved, elongated cell with a nucleus and a trailing flagellum on a black background">
+              </picture>
+              <figcaption>Illustration: NIAID / NIH BioArt, public domain</figcaption>
+            </figure>
+            <div class="card-body">
+              <p class="card-meta">Gilman Lab · Johns Hopkins Bloomberg School of Public Health · 2024</p>
+              <h3>What does the blood transcriptome reveal in early chronic Chagas cardiomyopathy?</h3>
+              <span class="status">Manuscript submitted</span>
+              <p>I led the RNA-seq analysis of a blood-transcriptome study: read QC and trimming (FastQC, MultiQC, BBDuk), quantification with Salmon and tximport, differential expression with DESeq2, unsupervised structure (PCA, UMAP, t-SNE, HDBSCAN) and pathway enrichment across MSigDB, plus manuscript figures and Methods/Results writing.</p>
+              <ul class="tags"><li>RNA-seq</li><li>Salmon</li><li>DESeq2</li><li>MSigDB</li></ul>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <figure class="card-media">
+              <picture>
+                <source srcset="assets/img/research-mtb.webp" type="image/webp">
+                <img src="assets/img/research-mtb.jpg" width="800" height="500" loading="lazy" decoding="async" alt="Scanning electron micrograph of rod-shaped Mycobacterium tuberculosis bacteria">
+              </picture>
+              <figcaption>SEM: CDC / Dr. Ray Butler, Janice Carr, public domain</figcaption>
+            </figure>
+            <div class="card-body">
+              <p class="card-meta">BigMind · NYU / New York Genome Center, with City St George's, University of London · 2024-now</p>
+              <h3>What can platelets tell us about tuberculosis?</h3>
+              <span class="status">Manuscript in preparation</span>
+              <p>With Daniela E. Kirwan, Ph.D., I lead a platelet transcriptomics study of tuberculosis: RNA-seq from raw reads through Salmon and DESeq2, followed by competitive pathway enrichment with CAMERA, PADOG and GSEA.</p>
+              <ul class="tags"><li>RNA-seq</li><li>DESeq2</li><li>CAMERA</li><li>PADOG</li><li>GSEA</li></ul>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <figure class="card-media">
+              <picture>
+                <source srcset="assets/img/research-perpoa.webp" type="image/webp">
+                <img src="assets/img/research-perpoa.jpg" width="800" height="500" loading="lazy" decoding="async" alt="UMAP of Peromyscus preoptic-area neurons colored excitatory (red) and inhibitory (blue), each cluster labeled with its best-matching mouse MERFISH cluster">
+              </picture>
+              <figcaption>Figure from my <a href="https://github.com/DanielGarbozo/peroPOA_snRNAseq">peroPOA_snRNAseq</a> repository</figcaption>
+            </figure>
+            <div class="card-body">
+              <p class="card-meta">Independent reanalysis of public data · GEO GSE272719</p>
+              <h3>Do sex differences in brain cell types hold up across species and methods?</h3>
+              <span class="status status--neutral">Public repository</span>
+              <p>A reproducible reanalysis of a <i>Peromyscus</i> preoptic-area snRNA-seq atlas. I rebuilt 53 neuron clusters from 95,057 nuclei of two species and mapped them onto the mouse POA MERFISH atlas (held-out accuracy 0.73 inhibitory, 0.81 excitatory). Treating the published sex-bias result as a hypothesis, the between-species ratio of male-biased genes held between 1.4 and 2.7 across subsampling schemes, gene filters and two methods (edgeR, PyDESeq2), against a published 2.8.</p>
+              <ul class="tags"><li>scanpy</li><li>Harmony</li><li>Scrublet</li><li>edgeR</li><li>PyDESeq2</li></ul>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <figure class="card-media">
+              <picture>
+                <source srcset="assets/img/research-poultry.webp" type="image/webp">
+                <img src="assets/img/research-poultry.jpg" width="800" height="500" loading="lazy" decoding="async" alt="A brown free-range hen with her chicks foraging among grass and soil">
+              </picture>
+              <figcaption>Photo: safaritravelplus, CC0</figcaption>
+            </figure>
+            <div class="card-body">
+              <p class="card-meta">FARVET Bioinformatics Core · 2026-now</p>
+              <h3>How do surface proteins of poultry viruses vary among Peruvian field isolates?</h3>
+              <span class="status">Manuscript in preparation</span>
+              <p>For Newcastle disease virus, I study the pre-fusion F glycoprotein of Peruvian field isolates with molecular dynamics. For avian orthoreovirus, I built a surveillance workflow that genotypes isolates by the σC attachment gene from Oxford Nanopore consensus sequences: codon-aware alignment (MACSE), maximum-likelihood trees (IQ-TREE, cross-checked in MEGA), AlphaFold2-Multimer trimer models benchmarked against an RMSD noise floor from crystal structures (bio3d), and surface-exposure (SASA) mapping.</p>
+              <ul class="tags"><li>Molecular dynamics</li><li>AlphaFold2-Multimer</li><li>IQ-TREE</li><li>Nanopore</li></ul>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <figure class="card-media">
+              <picture>
+                <source srcset="assets/img/research-histology.webp" type="image/webp">
+                <img src="assets/img/research-histology.jpg" width="800" height="500" loading="lazy" decoding="async" alt="H&amp;E-stained tissue section of invasive ductal carcinoma of the breast, pink stroma with purple tumor cell nests">
+              </picture>
+              <figcaption>Histology: Mikael Häggström, M.D., CC0</figcaption>
+            </figure>
+            <div class="card-body">
+              <p class="card-meta">BigMind · OmicsKit · research interest</p>
+              <h3>How can omics be integrated with clinical data and images?</h3>
+              <span class="status">Manuscript submitted</span>
+              <p>My long-term interest is integrative foundation models that combine genomics with clinical data and imaging. The groundwork is reusable infrastructure: OmicsKit, an R package for multi-omics analysis and visualization that brings annotation, dimensionality reduction, pathway enrichment, gene-set networks, ROC/AUC, Kaplan-Meier survival and Cox forest plots into one toolkit.</p>
+              <ul class="tags"><li>R</li><li>Multi-omics</li><li>Survival models</li><li>Visualization</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Software ===================== -->
+    <section class="section" id="software" aria-labelledby="software-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Software</span>
+          <h2 class="tagline" id="software-title">Tools I've built and contributed to.</h2>
+          <p class="lead">Tested, documented and versioned. One card per repository.</p>
+        </div>
+
+        <div class="card-grid card-grid--3">
+          <article class="card sw-card reveal">
+            <div class="card-body">
+              <h3>hicpup</h3>
+              <p class="card-meta">Author · Python · cooltools, coolpuppy, pytest, GitHub Actions</p>
+              <p>Downstream analysis of Hi-C pileups: fountain cone profiles, P(s) slopes and loop quantification. A modular package with a four-command Typer CLI (expected, pileup, profile, plot), explicit I/O and zero global state.</p>
+              <p>Regression tests (frozen-array, synthetic signal-injection, NaN-contamination); CI runs ruff and pytest on every push; type-hinted docs on GitHub Pages.</p>
+              <div class="card-links">
+                <a href="https://github.com/DanielGarbozo/hicpup"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>GitHub</a>
+                <a href="https://danielgarbozo.github.io/hicpup/"><svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg>Docs</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card sw-card reveal">
+            <div class="card-body">
+              <h3>hicpup-nf</h3>
+              <p class="card-meta">Author · Nextflow DSL2 · Docker, Singularity, GitHub Actions</p>
+              <p>A modular DSL2 pipeline (HIC2COOL → EXPECTED → PILEUP → PROFILE → PLOT), one container per process, following the nf-core pattern. Combinable profiles separate engine from dataset (test/docker, full/singularity).</p>
+              <p>CI with a no-NaN content assertion; handles .hic and .cool inputs, scaling from synthetic fixtures to public GEO data.</p>
+              <div class="card-links">
+                <a href="https://github.com/DanielGarbozo/hicpup-nf"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card sw-card reveal">
+            <div class="card-body">
+              <h3>peroPOA_snRNAseq</h3>
+              <p class="card-meta">Author (solo project) · Python, R · scanpy, Harmony, Scrublet, PyDESeq2, Seurat, edgeR</p>
+              <p>A reproducible single-nucleus RNA-seq reanalysis pipeline, from GEO count matrices through QC, integration, clustering, MERFISH label transfer, pseudobulk differential abundance and expression, and a robustness check across subsampling and methods.</p>
+              <div class="card-links">
+                <a href="https://github.com/DanielGarbozo/peroPOA_snRNAseq"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card sw-card sw-card--feature reveal">
+            <figure class="card-media">
+              <picture>
+                <source srcset="assets/img/omicskit-architecture.webp" type="image/webp">
+                <img src="assets/img/omicskit-architecture.png" width="624" height="683" loading="lazy" decoding="async" alt="OmicsKit architecture: five applications (experimental design, differential expression, pathway enrichment, multi-omics integration, phenotypic association) branch into analyses and then into individual plotting and statistics tools">
+              </picture>
+            </figure>
+            <div class="card-body">
+              <h3>OmicsKit</h3>
+              <p class="card-meta">Core developer · R · Ensembl BioMart · BigMind</p>
+              <span class="status">Manuscript submitted</span>
+              <p>An R package for reproducible multi-omics analysis and visualization. Reusable functions for annotation, dimensionality reduction, differential-analysis visualization, pathway enrichment (GSEA, CAMERA, PADOG), gene-set networks, ROC/AUC and Kaplan-Meier plots, with version-aware, multi-species BioMart annotation.</p>
+              <div class="card-links">
+                <a href="https://github.com/BigMindLab/OmicsKit"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card sw-card reveal">
+            <div class="card-body">
+              <h3>ercantools</h3>
+              <p class="card-meta">Contributor · R · Ercan Lab</p>
+              <p>Reusable plotting and analysis utilities for condensin and dosage-compensation ChIP-seq workflows in <i>C. elegans</i>, built on DiffBind output.</p>
+              <div class="card-links">
+                <a href="https://github.com/ercanlab/ercantools"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card sw-card reveal">
+            <div class="card-body">
+              <h3>SeqWrangler (ClawBio)</h3>
+              <p class="card-meta">Open-source contributor · Python · advisor Manuel Corpas, Ph.D.</p>
+              <p>A Python pipeline for automated NGS read processing with multi-aligner support (BWA, Bowtie2, minimap2), a synthetic-data demo mode, and mock-based tests that emit reproducibility artifacts (metadata, SHA-256 checksums).</p>
+              <div class="card-links">
+                <a href="https://github.com/ClawBio/ClawBio/tree/0d79d37d627fb6f9813f2b53a7de143e0cfdda48"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card sw-card reveal">
+            <div class="card-body">
+              <h3>Teloscope documentation</h3>
+              <p class="card-meta">Documentation contributor · MkDocs, Read the Docs · Vertebrate Genome Lab</p>
+              <p>Designed and deployed a 10-section MkDocs and Read the Docs site for a published telomere-annotation tool, reusing the repository README as a single source of truth, with a Material-theme configuration managed through a fork/upstream release workflow.</p>
+              <div class="card-links">
+                <a href="https://github.com/vgl-hub/teloscope"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>GitHub</a>
+                <a href="https://teloscope.readthedocs.io"><svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg>Docs</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card sw-card reveal">
+            <div class="card-body">
+              <h3>dryhic</h3>
+              <p class="card-meta">Author · Python · cooler, cooltools</p>
+              <span class="status status--neutral">In development</span>
+              <p>A transformer that scores chromatin fountain anchors as calibrated per-bin probabilities from a single Hi-C contact map, pretrained on parametric fountain simulators.</p>
+              <div class="card-links">
+                <span class="no-link">Code not yet public</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Publications ===================== -->
+    <section class="section section--alt" id="publications" aria-labelledby="pubs-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Publications</span>
+          <h2 class="tagline" id="pubs-title">Manuscripts, in review and in preparation.</h2>
+        </div>
+
+        <ol class="pubs">
+          <li class="pub reveal">
+            <div>
+              <p class="pub-title">OmicsKit: A toolset for multi-omics analysis and visualization.</p>
+              <p class="pub-authors"><strong>Garbozo D</strong>, Guevara-Diaz DF, Tataje-Lavanda L, Requena D.</p>
+              <p class="pub-venue"><em>Bioinformatics Advances</em>, 2026.</p>
+            </div>
+            <span class="status">Submitted · under review</span>
+          </li>
+          <li class="pub reveal">
+            <div>
+              <p class="pub-title">Blood transcriptomic biomarkers of cardiomyopathy in chronic Chagas disease.</p>
+              <p class="pub-authors">Requena D, Guevara-Diaz DF, <strong>Garbozo D</strong>, Duque C, Medico JA, et al.</p>
+              <p class="pub-venue"><em>Journal of Infectious Diseases</em>, 2026.</p>
+            </div>
+            <span class="status">Submitted</span>
+          </li>
+          <li class="pub reveal">
+            <div>
+              <p class="pub-title">Platelet transcriptomic profiling provides novel insights into Tuberculosis disease.</p>
+              <p class="pub-authors"><strong>Garbozo D</strong>, Guevara-Diaz DF, Requena D.</p>
+              <p class="pub-venue">2026.</p>
+            </div>
+            <span class="status status--neutral">In preparation · internal review</span>
+          </li>
+          <li class="pub reveal">
+            <div>
+              <p class="pub-title">Insights of Cohesin and Condensin in Dosage Compensation in <i>C. elegans</i>.</p>
+              <p class="pub-authors">Wang H, Zhao Y, <strong>Garbozo D</strong>, et al.</p>
+              <p class="pub-venue">2026.</p>
+            </div>
+            <span class="status status--neutral">In preparation</span>
+          </li>
+          <li class="pub reveal">
+            <div>
+              <p class="pub-title">Molecular dynamics of the pre-fusion F glycoprotein in Peruvian field isolates of Newcastle disease virus compared with the S1133 reference strain.</p>
+              <p class="pub-authors"><strong>Garbozo D</strong>, Tataje-Lavanda L, et al.</p>
+              <p class="pub-venue">2026.</p>
+            </div>
+            <span class="status status--neutral">In preparation</span>
+          </li>
+        </ol>
+        <p class="pub-note">Results from manuscripts under review or in preparation are not shown on this site until they are published.</p>
+      </div>
+    </section>
+
+    <!-- ===================== Experience ===================== -->
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Experience</span>
+          <h2 class="tagline" id="exp-title">Labs, teams and training.</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <span class="tl-when"><time datetime="2026-10">Oct 2026</time> - now</span>
+            <div>
+              <h3>Bioinformatics consultant (contract)</h3>
+              <p class="tl-org">Omics task author for AI evaluation</p>
+              <p>Designing omics analysis tasks (bulk RNA-seq, single-cell RNA-seq, proteomics) with reference solutions, verification notes and grading rubrics.</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-when"><time datetime="2026-09">Sep 2026</time> - now</span>
+            <div>
+              <h3>External collaborator</h3>
+              <p class="tl-org">Kara Bernstein Lab, Epigenetics Institute, University of Pennsylvania · supervisor Victor Leon, Ph.D.</p>
+              <p>Genomic analysis of DNA double-strand break sites in yeast.</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-when"><time datetime="2026-07">Jul 2026</time> - now</span>
+            <div>
+              <h3>Proteomic Bioinformatician</h3>
+              <p class="tl-org">FARVET S.A.C. (veterinary vaccines and pharmaceuticals), Bioinformatics Core · supervisor Dr. Luis Tataje-Lavanda</p>
+              <p>Genomic surveillance of avian orthoreovirus from Oxford Nanopore data, codon-aware phylogenetics, and σC trimer structure prediction on an HPC cluster.</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-when"><time datetime="2025-11">Nov</time> - <time datetime="2025-12">Dec 2025</time></span>
+            <div>
+              <h3>Research Intern</h3>
+              <p class="tl-org">Risca Lab, The Rockefeller University · PI Viviana Risca, Ph.D.</p>
+              <p>ATAC-seq differential accessibility, TF motif analysis and metagene profiling.</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-when"><time datetime="2025-04">Apr 2025</time> - now</span>
+            <div>
+              <h3>Research Intern</h3>
+              <p class="tl-org">Ercan Lab, Center for Genomics and Systems Biology, New York University · PI Sevinc Ercan, Ph.D.</p>
+              <p>HPC-compatible ChIP-seq workflows for AVITI data, DiffBind differential binding, and Hi-C / 3D-genomics workflows, packaged into hicpup and hicpup-nf.</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-when"><time datetime="2024-11">Nov 2024</time> - now</span>
+            <div>
+              <h3>Research Assistant</h3>
+              <p class="tl-org">BigMind, Bioinformatics Group of Multi-Omics &amp; Immunology, NYU / New York Genome Center · supervisor David Requena, Ph.D.</p>
+              <p>Core developer of OmicsKit; leading tuberculosis platelet transcriptomics with City St George's, University of London.</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-when"><time datetime="2024-03">Mar</time> - <time datetime="2024-11">Nov 2024</time></span>
+            <div>
+              <h3>Research Intern</h3>
+              <p class="tl-org">Department of International Health, Johns Hopkins Bloomberg School of Public Health · PI Robert H. Gilman, MD, DTM&amp;H</p>
+              <p>Led the RNA-seq analysis of a Chagas cardiomyopathy blood-transcriptome study.</p>
+            </div>
+          </li>
+          <li class="tl-item tl-item--edu reveal">
+            <span class="tl-when"><time datetime="2020">2020</time> - <time datetime="2024">2024</time></span>
+            <div>
+              <h3>B.Sc. Genetics &amp; Biotechnology</h3>
+              <p class="tl-org">Universidad Nacional Mayor de San Marcos (UNMSM), Lima, Peru</p>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="subhead reveal" style="margin-top:56px">Selected training</h3>
+        <ul class="training reveal">
+          <li>Variant calling with nf-core: Sarek for tumor/normal WES<span>STaiMIC, Matera, Italy · 2026</span></li>
+          <li>Linear Algebra<span>MIT OpenCourseWare · 2026</span></li>
+          <li>Spatial transcriptomics: sequencing- and imaging-based methods<span>Cold Spring Harbor Laboratory · 2025</span></li>
+          <li>Hi-C data analysis and 3D-genome interpretation<span>New York University · 2025</span></li>
+          <li>ChIP-seq and differential-binding analysis<span>New York University · 2025</span></li>
+          <li>RNA-seq, differential expression and transcript quantification<span>BigMind · 2024</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== Community ===================== -->
+    <section class="section section--alt" id="community" aria-labelledby="community-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Community</span>
+          <h2 class="tagline" id="community-title">Talks, awards and the people I build with.</h2>
+        </div>
+
+        <div class="three-col">
+          <div class="col reveal">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-mic"/></svg>Oral presentations</h3>
+            <ul class="list-plain">
+              <li>ISCB-Latin America SoIBio SPBBC Conference on Bioinformatics<span>Lima · 2026</span></li>
+              <li>Australian Bioinformatics and Computational Biology Society Conference<span>Australia · 2026</span></li>
+              <li>Nextflow Summit<span>2026</span></li>
+              <li>AI in Bioscience: Converging Interests and Joint Solutions<span>Mainz, Germany · 2026</span></li>
+              <li>VII International Congress SPBBC<span>Lima · 2025</span></li>
+              <li>Galaxy &amp; Bioconductor Community Conference<span>CSHL, New York · 2025</span></li>
+              <li>Bioinformatics Youth Summit SPBBC<span>Lima · 2024</span></li>
+              <li>ASTMH Annual Meeting<span>2023</span></li>
+              <li>IV International Congress SPBBC<span>Lima · 2022</span></li>
+            </ul>
+          </div>
+          <div class="col reveal">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg>Awards &amp; scholarships</h3>
+            <ul class="list-plain">
+              <li>SACNAS Pathway to Graduate School Program<span>2026</span></li>
+              <li>Securing Degrees Scholarship<span>2026</span></li>
+              <li>Científico Latino Graduate Student Mentorship Initiative (GSMI) scholar<span>2026</span></li>
+              <li>Santander course scholarship<span>2026</span></li>
+              <li>Fellowship, Galaxy &amp; Bioconductor Community Conference<span>Cold Spring Harbor Laboratory · 2025</span></li>
+            </ul>
+          </div>
+          <div class="col reveal">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-people"/></svg>Affiliations &amp; service</h3>
+            <ul class="list-plain">
+              <li>Peruvian Society for Bioinformatics and Computational Biology (SPBBC): active member and organizer; with the branding team and Regional Student Group, contributed to the bid to host the ISCB 2026 conference in Peru<span>2024-2026</span></li>
+              <li>International Society for Computational Biology (ISCB), member<span>2025-2027</span></li>
+              <li>Ibero-American Network for Foresight in Artificial Intelligence for the Biosciences and Biotechnology (RIABIA-pro)<span>2024-2026</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Contact ===================== -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Contact</span>
+          <h2 class="tagline" id="contact-title">Let's talk science, pipelines or collaboration.</h2>
+        </div>
+
+        <div class="three-col">
+          <div class="contact-card col reveal">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Email</h3>
+            <a class="email" id="email-address" href="mailto:danielgarbozo4@gmail.com">danielgarbozo4@gmail.com</a>
+            <button class="btn btn--outline copy-btn" type="button" data-copy="danielgarbozo4@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg>Copy address</button>
+            <p class="copy-status" role="status" aria-live="polite"></p>
+          </div>
+          <div class="contact-card col reveal">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Where to find me</h3>
+            <p>Center for Genomics and Systems Biology, New York University (Ercan Lab), and online:</p>
+            <div class="contact-links">
+              <a href="https://github.com/DanielGarbozo" rel="me"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>github.com/DanielGarbozo</a>
+              <a href="https://www.linkedin.com/in/danielgarbozo" rel="me"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg>linkedin.com/in/danielgarbozo</a>
+            </div>
+          </div>
+          <div class="contact-card col reveal">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg>CV</h3>
+            <p>A one-page summary of my education, research, software, manuscripts and awards.</p>
+            <div class="btn-row">
+              <a class="btn btn--solid" href="cv.pdf" download><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg>Download PDF</a>
+              <a class="btn btn--outline" href="cv.html">View online</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a class="brand" href="#home">Daniel Garbozo<span>.</span></a>
+        <a class="to-top" href="#home"><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>Back to top</a>
+      </div>
+      <p class="credits">
+        © <span data-year>2026</span> Daniel Garbozo. Hand-written HTML, CSS and JavaScript, hosted on GitHub Pages.<br>
+        Images: <i>C. elegans</i> by ZEISS Microscopy (CC BY 2.0); <i>T. cruzi</i> illustration by NIAID (public domain); <i>M. tuberculosis</i> SEM by CDC / Ray Butler, Janice Carr (public domain); breast histology by Mikael Häggström (CC0); hen by safaritravelplus (CC0); sequencing flow cell by Suspencewl (CC0), all via Wikimedia Commons. Hero Hi-C data: GEO GSE188849 (Ercan lab). Other figures are my own.
+        <a href="https://github.com/DanielGarbozo/DanielGarbozo.github.io/blob/main/CREDITS.md">Full credits</a>.
+      </p>
+    </div>
+  </footer>
+
+  <aside class="greeting" id="greeting" aria-label="Greeting" hidden>
+    <p>Hi there, thanks for visiting my website! I'd love to <a href="https://www.linkedin.com/in/danielgarbozo">connect</a> with you :)</p>
+    <button class="greeting-close" type="button" aria-label="Dismiss greeting"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+  </aside>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
